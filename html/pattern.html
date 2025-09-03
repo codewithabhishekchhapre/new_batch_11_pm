@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+</head>
+<body>
+     
+<script>
+     var pattern="";
+     // for(var i=0;i<5;i++){
+     //      for(var j=0;j<5;j++){
+     //           if(i==0|| i==4 || j==0 || j==4){
+     //                pattern+="* ";
+     //           }
+     //           else{
+     //                pattern+="  ";
+     //           }
+     //      }
+     //      pattern+="\n";
+     // }
+
+     var num=5;
+     for(var i=0;i<num;i++){
+          for(var j=0;j<i;j++){
+               pattern+=" ";
+          }
+          for(var k=0;k<num-i;k++){
+                    pattern+="* ";
+          }
+          pattern+="\n"
+     }
+
+
+
+     console.log(pattern)
+</script>
+
+
+</body>
+</html>
