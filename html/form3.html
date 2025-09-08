@@ -1,0 +1,66 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      textarea {
+        resize: none;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="" autocomplete="on">
+      <input
+        type="text"
+        autofocus
+        name="username"
+        placeholder="enter your name"
+        required
+      />
+      <input
+        type="password"
+        name="password"
+        placeholder="ex: abhi@123"
+        required
+      />
+
+      <!-- <textarea name="" wrap="soft" cols="10" rows="5" id=""></textarea> -->
+      <select name="vehicle" id="">
+        <option value="car">car</option>
+        <option value="bike">bike</option>
+        <option value="cycle">cycle</option>
+        <option value="truck">truck</option>
+        <option value="bus">bus</option>
+      </select>
+
+      <input list="browsers" />
+      <datalist id="browsers">
+        <option value="Edge"></option>
+        <option value="Firefox"></option>
+        <option value="Chrome"></option>
+        <option value="Opera"></option>
+        <option value="Safari"></option>
+      </datalist>
+
+      <input type="submit" />
+    </form>
+
+    <form action="">
+      <fieldset>
+        <legend>personal information</legend>
+        <label for="fname">First name:</label><br />
+        <input type="text" id="fname" name="fname" value="John" /><br />
+        <label for="lname">Last name:</label><br />
+        <input type="text" id="lname" name="lname" value="Doe" /><br /><br />
+      </fieldset>
+      <fieldset>
+        <legend>address data</legend>
+        <label for="address">enter your address</label><br />
+        <textarea name="address" id="address" cols="30" rows="5"></textarea
+        ><br /><br />
+        <input type="submit" value="submit" />
+      </fieldset>
+    </form>
+  </body>
+</html>
